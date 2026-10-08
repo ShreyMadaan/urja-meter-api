@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: urja-meter-api
+  config:
+    import: optional:file:.env[.properties]
+server:
+  port: 8080
+urja:
+  portal:
+    base-url: https://urja-ops.flockenergy.tech
+    email: ${URJA_EMAIL:}
+    password: ${URJA_PASSWORD:}
